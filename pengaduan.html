@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengaduan - Desa Banyukuning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar scrolled">
+    <div class="navbar-inner">
+      <a href="beranda.html" class="navbar-brand"><div class="brand-icon">BK</div><span>Desa Banyukuning</span></a>
+      <div class="navbar-menu">
+        <a href="beranda.html">Beranda</a><a href="profil-desa.html">Profil Desa</a><a href="data-desa.html">Data Desa</a><a href="berita.html">Berita</a><a href="anggaran.html">Anggaran</a><a href="umkm.html">UMKM</a><a href="galeri.html">Galeri</a><a href="peta.html">Peta</a><a href="pengaduan.html" class="active">Pengaduan</a>
+      </div>
+      <button class="navbar-toggle" aria-label="Menu"><i class="ri-menu-3-line"></i></button>
+    </div>
+  </nav>
+  <div class="navbar-mobile">
+    <button class="mobile-close" aria-label="Tutup"><i class="ri-close-line"></i></button>
+    <a href="beranda.html">Beranda</a><a href="profil-desa.html">Profil Desa</a><a href="data-desa.html">Data Desa</a><a href="berita.html">Berita</a><a href="anggaran.html">Anggaran</a><a href="umkm.html">UMKM</a><a href="galeri.html">Galeri</a><a href="peta.html">Peta</a><a href="pengaduan.html" class="active">Pengaduan</a>
+  </div>
+
+  <div class="page-header">
+    <h1>Pengaduan Masyarakat</h1>
+    <div class="breadcrumb"><a href="beranda.html">Beranda</a><span>/</span><span>Pengaduan</span></div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title fade-up">Sampaikan Aspirasi Anda</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle fade-up">Isi formulir di bawah ini untuk menyampaikan pengaduan, saran, atau aspirasi Anda kepada Pemerintah Desa Banyukuning. Pengaduan akan dikirim melalui WhatsApp.</p>
+
+      <!-- Info Cards -->
+      <div class="grid-3 fade-up" style="margin-bottom: 48px;">
+        <div class="card" style="text-align:center; padding: 28px 20px;">
+          <div style="width:56px;height:56px;background:#d8f3dc;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;color:#1e5a3a;font-size:1.4rem;">
+            <i class="ri-shield-check-line"></i>
+          </div>
+          <h3 style="font-size:0.95rem;font-weight:600;color:#1a4731;margin-bottom:6px;">Kerahasiaan Terjamin</h3>
+          <p style="font-size:0.82rem;color:#6b7280;line-height:1.6;">Data dan identitas pelapor dijaga kerahasiaannya sesuai peraturan yang berlaku.</p>
+        </div>
+        <div class="card" style="text-align:center; padding: 28px 20px;">
+          <div style="width:56px;height:56px;background:#d8f3dc;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;color:#1e5a3a;font-size:1.4rem;">
+            <i class="ri-time-line"></i>
+          </div>
+          <h3 style="font-size:0.95rem;font-weight:600;color:#1a4731;margin-bottom:6px;">Respon Cepat</h3>
+          <p style="font-size:0.82rem;color:#6b7280;line-height:1.6;">Pengaduan akan ditanggapi dalam waktu maksimal 3x24 jam oleh perangkat desa.</p>
+        </div>
+        <div class="card" style="text-align:center; padding: 28px 20px;">
+          <div style="width:56px;height:56px;background:#d8f3dc;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;color:#1e5a3a;font-size:1.4rem;">
+            <i class="ri-customer-service-2-line"></i>
+          </div>
+          <h3 style="font-size:0.95rem;font-weight:600;color:#1a4731;margin-bottom:6px;">Tindak Lanjut</h3>
+          <p style="font-size:0.82rem;color:#6b7280;line-height:1.6;">Setiap pengaduan akan ditindaklanjuti dan dilaporkan perkembangannya kepada pelapor.</p>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="form-card fade-up">
+        <div style="text-align:center;margin-bottom:28px;">
+          <div style="width:60px;height:60px;background:#d8f3dc;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;color:#1e5a3a;font-size:1.5rem;">
+            <i class="ri-edit-2-line"></i>
+          </div>
+          <h3 style="font-size:1.2rem;font-weight:700;color:#1a4731;margin-bottom:4px;">Formulir Pengaduan</h3>
+          <p style="font-size:0.82rem;color:#6b7280;">Lengkapi data di bawah ini dengan benar</p>
+        </div>
+        <form id="pengaduanForm">
+          <div class="form-group">
+            <label for="nama"><i class="ri-user-3-line" style="margin-right:4px;"></i> Nama Lengkap</label>
+            <input type="text" id="nama" placeholder="Masukkan nama lengkap Anda" required>
+          </div>
+          <!-- <div class="form-group">
+            <label for="nik"><i class="ri-bank-card-line" style="margin-right:4px;"></i> NIK (Nomor Induk Kependudukan)</label>
+            <input type="text" id="nik" placeholder="Masukkan 16 digit NIK" maxlength="16" pattern="[0-9]{16}" required>
+          </div> -->
+          <div class="form-group">
+            <label for="alamat"><i class="ri-map-pin-line" style="margin-right:4px;"></i> Alamat</label>
+            <input type="text" id="alamat" placeholder="Masukkan alamat tempat tinggal" required>
+          </div>
+          <div class="form-group">
+            <label for="telepon"><i class="ri-phone-line" style="margin-right:4px;"></i> Nomor Telepon</label>
+            <input type="tel" id="telepon" placeholder="Contoh: 08123456789" required>
+          </div>
+          <div class="form-group">
+            <label for="kategori"><i class="ri-folder-line" style="margin-right:4px;"></i> Kategori Pengaduan</label>
+            <select id="kategori" required>
+              <option value="">-- Pilih Kategori --</option>
+              <option value="Infrastruktur">Infrastruktur (Jalan, Jembatan, Drainase)</option>
+              <option value="Pelayanan Publik">Pelayanan Publik</option>
+              <option value="Lingkungan">Lingkungan & Kebersihan</option>
+              <option value="Keamanan">Keamanan & Ketertiban</option>
+              <option value="Kesehatan">Kesehatan</option>
+              <option value="Pendidikan">Pendidikan</option>
+              <option value="Sosial">Sosial & Kemasyarakatan</option>
+              <option value="Lainnya">Lainnya</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="pesan"><i class="ri-message-2-line" style="margin-right:4px;"></i> Isi Pengaduan</label>
+            <textarea id="pesan" placeholder="Jelaskan pengaduan Anda secara detail, termasuk lokasi kejadian, waktu, dan kronologi..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-whatsapp" style="width:100%;padding:14px;font-size:0.95rem;border-radius:10px;margin-top:8px;">
+            <i class="ri-whatsapp-line" style="font-size:1.2rem;"></i> Kirim via WhatsApp
+          </button>
+          <p style="text-align:center;margin-top:14px;font-size:0.75rem;color:#9ca3af;">
+            Dengan mengirim formulir ini, Anda akan diarahkan ke WhatsApp untuk mengirim pengaduan ke pengurus Desa Banyukuning.
+          </p>
+        </form>
+<script>
+document.getElementById("pengaduanForm").addEventListener("submit", function(e) {
+  e.preventDefault(); // cegah reload
+
+  const nama = document.getElementById("nama").value;
+  const alamat = document.getElementById("alamat").value;
+  const telp = document.getElementById("telepon").value;
+  const kategori = document.getElementById("kategori").value;
+  const pesan = document.getElementById("pesan").value;
+
+  // 👉 GANTI DENGAN NOMOR WA KAMU SENDIRI
+  const nomorTujuan = "628976362076"; 
+
+  const teks = `*PENGADUAN DESA BANYUKUNING*
+
+Nama: ${nama}
+Alamat: ${alamat}
+No. Telp: ${telp}
+Kategori: ${kategori}
+
+Isi Pengaduan:
+${pesan}`;
+
+  const url = "https://wa.me/" + nomorTujuan + "?text=" + encodeURIComponent(teks);
+  window.open(url, "_blank");
+});
+</script>
+
+
+      </div>
+    </div>
+  </section>
+
+   <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <h4>Desa Banyukuning</h4>
+          <p>Website resmi Pemerintah Desa Banyukuning, Kecamatan Bandungan, Kabupaten Semarang, Provinsi Jawa Tengah.</p>
+          <div style="margin-top: 12px;">
+            <div class="contact-item"><i class="ri-map-pin-2-fill"></i><span>Jl. Raya Banyukuning, Bandungan, Semarang</span></div>
+            <div class="contact-item"><i class="ri-phone-fill"></i><span>(0298) 711-234</span></div>
+            <div class="contact-item"><i class="ri-mail-fill"></i><span>desa.banyukuning@gmail.com</span></div>
+          </div>
+        </div>
+        <div class="footer-hours">
+          <h4>Jam Pelayanan</h4>
+          <ul>
+            <li><span>Senin - Kamis</span><span>08:00 - 15:00</span></li>
+            <li><span>Jumat</span><span>08:00 - 11:00</span></li>
+            <li><span>Sabtu</span><span>08:00 - 12:00</span></li>
+            <li><span>Minggu</span><span>Libur</span></li>
+          </ul>
+        </div>
+        <div class="footer-surat">
+          <h4>Layanan Surat</h4>
+          <ul>
+            <li><a href="surat/surat-keterangan-domisili.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Keterangan Domisili <i class="ri-external-link-line"></i></a></li>
+            <li><a href="surat/surat-pengantar-ktp.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Pengantar KTP <i class="ri-external-link-line"></i></a></li>
+            <li><a href="surat/surat-keterangan-usaha.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Keterangan Usaha <i class="ri-external-link-line"></i></a></li>
+            <li><a href="surat/surat-keterangan-tidak-mampu.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Keterangan Tidak Mampu <i class="ri-external-link-line"></i></a></li>
+            <li><a href="surat/surat-pengantar-skck.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Pengantar SKCK <i class="ri-external-link-line"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Media Sosial</h4>
+          <p class="social-text">Ikuti media sosial kami untuk informasi terbaru.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="https://www.instagram.com/desa_banyukuning/" target="_blank" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+            <a href="https://www.tiktok.com/@desa_banyukuning" target="_blank" aria-label="TikTok"><i class="ri-tiktok-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">&copy; 2026 UNNES GIAT 15. Seluruh hak cipta dilindungi.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

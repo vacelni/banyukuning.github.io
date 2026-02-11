@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anggaran - Desa Banyukuning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar scrolled">
+    <div class="navbar-inner">
+      <a href="beranda.html" class="navbar-brand"><div class="brand-icon">BK</div><span>Desa Banyukuning</span></a>
+      <div class="navbar-menu">
+        <a href="beranda.html">Beranda</a><a href="profil-desa.html">Profil Desa</a><a href="data-desa.html">Data Desa</a><a href="berita.html">Berita</a><a href="anggaran.html" class="active">Anggaran</a><a href="umkm.html">UMKM</a><a href="galeri.html">Galeri</a><a href="peta.html">Peta</a><a href="pengaduan.html">Pengaduan</a>
+      </div>
+      <button class="navbar-toggle" aria-label="Menu"><i class="ri-menu-3-line"></i></button>
+    </div>
+  </nav>
+  <div class="navbar-mobile">
+    <button class="mobile-close" aria-label="Tutup"><i class="ri-close-line"></i></button>
+    <a href="beranda.html">Beranda</a><a href="profil-desa.html">Profil Desa</a><a href="data-desa.html">Data Desa</a><a href="berita.html">Berita</a><a href="anggaran.html" class="active">Anggaran</a><a href="umkm.html">UMKM</a><a href="galeri.html">Galeri</a><a href="peta.html">Peta</a><a href="pengaduan.html">Pengaduan</a>
+  </div>
+
+  <div class="page-header">
+    <h1>Transparansi Anggaran</h1>
+    <div class="breadcrumb"><a href="beranda.html">Beranda</a><span>/</span><span>Anggaran</span></div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title fade-up">Anggaran Pendapatan & Belanja Desa</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle fade-up">Transparansi pengelolaan keuangan Desa Banyukuning Tahun Anggaran 2025</p>
+
+      <div class="grid-2 fade-up">
+        <!-- PENDAPATAN -->
+        <div class="anggaran-card">
+          <h3><i class="ri-money-dollar-circle-line" style="color: var(--green-600);"></i> Pendapatan Desa</h3>
+          <table class="anggaran-table">
+            <thead>
+              <tr><th>Sumber Pendapatan</th><th style="text-align:right;">Jumlah (Rp)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Dana Desa (APBN)</td><td style="text-align:right;">1.250.000.000</td></tr>
+              <tr><td>Alokasi Dana Desa (ADD)</td><td style="text-align:right;">485.000.000</td></tr>
+              <tr><td>Bagi Hasil Pajak & Retribusi</td><td style="text-align:right;">127.500.000</td></tr>
+              <tr><td>Bantuan Keuangan Provinsi</td><td style="text-align:right;">75.000.000</td></tr>
+              <tr><td>Pendapatan Asli Desa (PADes)</td><td style="text-align:right;">62.500.000</td></tr>
+            </tbody>
+          </table>
+          <div class="anggaran-total">
+            <span>Total Pendapatan</span>
+            <span>Rp 2.000.000.000</span>
+          </div>
+        </div>
+
+        <!-- BELANJA -->
+        <div class="anggaran-card">
+          <h3><i class="ri-shopping-cart-2-line" style="color: var(--gold-500);"></i> Belanja Desa</h3>
+          <table class="anggaran-table">
+            <thead>
+              <tr><th>Bidang Belanja</th><th style="text-align:right;">Jumlah (Rp)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Penyelenggaraan Pemerintahan</td><td style="text-align:right;">420.000.000</td></tr>
+              <tr><td>Pelaksanaan Pembangunan</td><td style="text-align:right;">850.000.000</td></tr>
+              <tr><td>Pembinaan Kemasyarakatan</td><td style="text-align:right;">180.000.000</td></tr>
+              <tr><td>Pemberdayaan Masyarakat</td><td style="text-align:right;">350.000.000</td></tr>
+              <tr><td>Penanggulangan Bencana</td><td style="text-align:right;">200.000.000</td></tr>
+            </tbody>
+          </table>
+          <div class="anggaran-total">
+            <span>Total Belanja</span>
+            <span>Rp 2.000.000.000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RINCIAN PEMBANGUNAN -->
+      <div style="margin-top: 48px;">
+        <h2 class="section-title fade-up">Rincian Belanja Pembangunan</h2>
+        <div class="section-divider"></div>
+        <div class="anggaran-card fade-up" style="max-width: 900px; margin: 0 auto;">
+          <table class="anggaran-table">
+            <thead>
+              <tr><th>No</th><th>Uraian Kegiatan</th><th style="text-align:right;">Anggaran (Rp)</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>Pengaspalan Jalan Dusun Krajan</td><td style="text-align:right;">250.000.000</td><td><span style="background: var(--green-100); color: var(--green-700); padding: 3px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 600;">Selesai</span></td></tr>
+              <tr><td>2</td><td>Pembangunan Drainase Dusun Ngasem</td><td style="text-align:right;">150.000.000</td><td><span style="background: #fef3c7; color: #92400e; padding: 3px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 600;">Proses</span></td></tr>
+              <tr><td>3</td><td>Renovasi Balai Pertemuan Jatisari</td><td style="text-align:right;">120.000.000</td><td><span style="background: #fef3c7; color: #92400e; padding: 3px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 600;">Proses</span></td></tr>
+              <tr><td>4</td><td>Pembangunan Jembatan Dusun Gedangan</td><td style="text-align:right;">180.000.000</td><td><span style="background: var(--gray-100); color: var(--gray-500); padding: 3px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 600;">Rencana</span></td></tr>
+              <tr><td>5</td><td>Rehab Pos Kamling (5 unit)</td><td style="text-align:right;">75.000.000</td><td><span style="background: var(--green-100); color: var(--green-700); padding: 3px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 600;">Selesai</span></td></tr>
+              <tr><td>6</td><td>Pembangunan MCK Umum</td><td style="text-align:right;">75.000.000</td><td><span style="background: var(--gray-100); color: var(--gray-500); padding: 3px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 600;">Rencana</span></td></tr>
+            </tbody>
+          </table>
+          <div class="anggaran-total">
+            <span>Total Belanja Pembangunan</span>
+            <span>Rp 850.000.000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <h4>Desa Banyukuning</h4>
+          <p>Website resmi Pemerintah Desa Banyukuning, Kecamatan Bandungan, Kabupaten Semarang, Provinsi Jawa Tengah.</p>
+          <div style="margin-top: 12px;">
+            <div class="contact-item"><i class="ri-map-pin-2-fill"></i><span>Jl. Raya Banyukuning, Bandungan, Semarang</span></div>
+            <div class="contact-item"><i class="ri-phone-fill"></i><span>(0298) 711-234</span></div>
+            <div class="contact-item"><i class="ri-mail-fill"></i><span>desa.banyukuning@gmail.com</span></div>
+          </div>
+        </div>
+        <div class="footer-hours">
+          <h4>Jam Pelayanan</h4>
+          <ul>
+            <li><span>Senin - Kamis</span><span>08:00 - 15:00</span></li>
+            <li><span>Jumat</span><span>08:00 - 11:00</span></li>
+            <li><span>Sabtu</span><span>08:00 - 12:00</span></li>
+            <li><span>Minggu</span><span>Libur</span></li>
+          </ul>
+        </div>
+        <div class="footer-surat">
+          <h4>Layanan Surat</h4>
+          <ul>
+            <li><a href="surat/surat-keterangan-domisili.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Keterangan Domisili <i class="ri-external-link-line"></i></a></li>
+            <li><a href="surat/surat-pengantar-ktp.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Pengantar KTP <i class="ri-external-link-line"></i></a></li>
+            <li><a href="surat/surat-keterangan-usaha.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Keterangan Usaha <i class="ri-external-link-line"></i></a></li>
+            <li><a href="surat/surat-keterangan-tidak-mampu.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Keterangan Tidak Mampu <i class="ri-external-link-line"></i></a></li>
+            <li><a href="surat/surat-pengantar-skck.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Pengantar SKCK <i class="ri-external-link-line"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Media Sosial</h4>
+          <p class="social-text">Ikuti media sosial kami untuk informasi terbaru.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="https://www.instagram.com/desa_banyukuning/" target="_blank" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+            <a href="https://www.tiktok.com/@desa_banyukuning" target="_blank" aria-label="TikTok"><i class="ri-tiktok-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">&copy; 2026 UNNES GIAT 15. Seluruh hak cipta dilindungi.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desa Banyukuning - Kecamatan Bandungan, Kabupaten Semarang</title>
+  <meta name="description" content="Website resmi Pemerintah Desa Banyukuning, Kecamatan Bandungan, Kabupaten Semarang, Provinsi Jawa Tengah.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar transparent">
+    <div class="navbar-inner">
+      <a href="beranda.html" class="navbar-brand">
+        <div class="brand-icon">BK</div>
+        <span>Desa Banyukuning</span>
+      </a>
+      <div class="navbar-menu">
+        <a href="beranda.html" class="active">Beranda</a>
+        <a href="profil-desa.html">Profil Desa</a>
+        <a href="data-desa.html">Data Desa</a>
+        <a href="berita.html">Berita</a>
+        <a href="anggaran.html">Anggaran</a>
+        <a href="umkm.html">UMKM</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="peta.html">Peta</a>
+        <a href="pengaduan.html">Pengaduan</a>
+      </div>
+      <button class="navbar-toggle" aria-label="Menu"><i class="ri-menu-3-line"></i></button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="navbar-mobile">
+    <button class="mobile-close" aria-label="Tutup menu"><i class="ri-close-line"></i></button>
+    <a href="beranda.html" class="active">Beranda</a>
+    <a href="profil-desa.html">Profil Desa</a>
+    <a href="data-desa.html">Data Desa</a>
+    <a href="berita.html">Berita</a>
+    <a href="anggaran.html">Anggaran</a>
+    <a href="umkm.html">UMKM</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="peta.html">Peta</a>
+    <a href="pengaduan.html">Pengaduan</a>
+  </div>
+
+  <!-- HERO SLIDER -->
+  <section class="hero">
+    <div class="hero-slide active">
+      <img src="images/hero1.jpeg" alt="Pemandangan Desa Banyukuning">
+    </div>
+    <div class="hero-slide">
+      <img src="images/hero2.jpeg" alt="Gunung Ungaran di Desa Banyukuning">
+    </div>
+    <div class="hero-slide">
+      <img src="images/hero3.jpeg" alt="Suasana Desa Banyukuning">
+    </div>
+
+    <div class="hero-overlay">
+      <h1>Selamat Datang di<br><span>Desa Banyukuning</span></h1>
+      <p>Kecamatan Bandungan, Kabupaten Semarang, Provinsi Jawa Tengah</p>
+      <a href="profil-desa.html" class="btn-hero">
+        Jelajahi Desa <i class="ri-arrow-right-line"></i>
+      </a>
+    </div>
+
+    <div class="hero-dots">
+      <button class="hero-dot active" aria-label="Slide 1"></button>
+      <button class="hero-dot" aria-label="Slide 2"></button>
+      <button class="hero-dot" aria-label="Slide 3"></button>
+    </div>
+  </section>
+
+  <!-- DATE & PRAYER INFO -->
+  <section class="info-bar">
+    <div class="container">
+      <div class="info-bar-grid">
+        <div class="date-card">
+          <h3><i class="ri-calendar-2-line"></i> Tanggal & Waktu</h3>
+          <div class="date-display" id="dateDisplay">Memuat...</div>
+          <div class="time-display" id="timeDisplay">--:--:-- WIB</div>
+        </div>
+        <div class="prayer-card">
+          <h3><i class="ri-moon-line"></i> Jadwal Sholat Hari Ini - Semarang</h3>
+          <div class="prayer-times-grid">
+            <div class="prayer-item" id="item-subuh">
+              <div class="prayer-name">Subuh</div>
+              <div class="prayer-time" id="prayer-subuh">--:--</div>
+            </div>
+            <div class="prayer-item" id="item-dzuhur">
+              <div class="prayer-name">Dzuhur</div>
+              <div class="prayer-time" id="prayer-dzuhur">--:--</div>
+            </div>
+            <div class="prayer-item" id="item-ashar">
+              <div class="prayer-name">Ashar</div>
+              <div class="prayer-time" id="prayer-ashar">--:--</div>
+            </div>
+            <div class="prayer-item" id="item-maghrib">
+              <div class="prayer-name">Maghrib</div>
+              <div class="prayer-time" id="prayer-maghrib">--:--</div>
+            </div>
+            <div class="prayer-item" id="item-isya">
+              <div class="prayer-name">Isya</div>
+              <div class="prayer-time" id="prayer-isya">--:--</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTER SECTION -->
+  <section class="counter-section">
+    <div class="container">
+      <div class="counter-grid">
+        <div class="counter-item fade-up">
+          <div class="counter-icon"><i class="ri-group-line"></i></div>
+          <div class="counter-number" data-target="5847">0</div>
+          <div class="counter-label">Jumlah Penduduk</div>
+        </div>
+        <div class="counter-item fade-up">
+          <div class="counter-icon"><i class="ri-home-4-line"></i></div>
+          <div class="counter-number" data-target="1762">0</div>
+          <div class="counter-label">Kepala Keluarga</div>
+        </div>
+        <div class="counter-item fade-up">
+          <div class="counter-icon"><i class="ri-community-line"></i></div>
+          <div class="counter-number" data-target="12">0</div>
+          <div class="counter-label">Dusun</div>
+        </div>
+        <div class="counter-item fade-up">
+          <div class="counter-icon"><i class="ri-map-2-line"></i></div>
+          <div class="counter-number" data-target="385" data-suffix=" Ha">0</div>
+          <div class="counter-label">Luas Wilayah</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEKILAS DESA -->
+  <section class="info-desa">
+  <h1>Informasi Desa</h1>
+  <p class="subtitle">Akses cepat ke informasi penting desa</p>
+
+  <div class="card-container">
+
+    <a href="berita.html" class="info-card">
+      <img src="images/berita4.jpeg" alt="Berita Terkini">
+      <div class="overlay">
+        <h3>📰 Berita Terkini</h3>
+        <p>Informasi terbaru dari Desa Banyukuning</p>
+      </div>
+      <div class="card-footer">
+        <span>Lihat selengkapnya</span>
+        <span class="arrow">→</span>
+      </div>
+    </a>
+
+    <a href="umkm.html" class="info-card">
+      <img src="images/galeri10.jpeg" alt="Produk UMKM">
+      <div class="overlay">
+        <h3>🛍️ Produk UMKM</h3>
+        <p>Temukan produk unggulan masyarakat desa</p>
+      </div>
+      <div class="card-footer">
+        <span>Lihat selengkapnya</span>
+        <span class="arrow">→</span>
+      </div>
+    </a>
+
+    <a href="galeri.html" class="info-card">
+      <img src="images/galeri2.jpeg" alt="Galeri Desa">
+      <div class="overlay">
+        <h3>🖼️ Galeri Desa</h3>
+        <p>Dokumentasi kegiatan dan keindahan desa</p>
+      </div>
+      <div class="card-footer">
+        <span>Lihat selengkapnya</span>
+        <span class="arrow">→</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <h4>Desa Banyukuning</h4>
+          <p>Website resmi Pemerintah Desa Banyukuning, Kecamatan Bandungan, Kabupaten Semarang, Provinsi Jawa Tengah.</p>
+          <div style="margin-top: 12px;">
+            <div class="contact-item"><i class="ri-map-pin-2-fill"></i><span>Jl. Raya Banyukuning, Bandungan, Semarang</span></div>
+            <div class="contact-item"><i class="ri-phone-fill"></i><span>(0298) 711-234</span></div>
+            <div class="contact-item"><i class="ri-mail-fill"></i><span>desa.banyukuning@gmail.com</span></div>
+          </div>
+        </div>
+        <div class="footer-hours">
+          <h4>Jam Pelayanan</h4>
+          <ul>
+            <li><span>Senin - Kamis</span><span>08:00 - 15:00</span></li>
+            <li><span>Jumat</span><span>08:00 - 11:00</span></li>
+            <li><span>Sabtu</span><span>08:00 - 12:00</span></li>
+            <li><span>Minggu</span><span>Libur</span></li>
+          </ul>
+        </div>
+        <div class="footer-surat">
+          <h4>Layanan Surat</h4>
+          <ul>
+            <li><a href="surat/surat-keterangan-domisili.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Keterangan Domisili <i class="ri-external-link-line"></i></a></li>
+            <li><a href="surat/surat-pengantar-ktp.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Pengantar KTP <i class="ri-external-link-line"></i></a></li>
+            <li><a href="surat/surat-keterangan-usaha.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Keterangan Usaha <i class="ri-external-link-line"></i></a></li>
+            <li><a href="surat/surat-keterangan-tidak-mampu.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Keterangan Tidak Mampu <i class="ri-external-link-line"></i></a></li>
+            <li><a href="surat/surat-pengantar-skck.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Pengantar SKCK <i class="ri-external-link-line"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Media Sosial</h4>
+          <p class="social-text">Ikuti media sosial kami untuk informasi terbaru.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="https://www.instagram.com/desa_banyukuning/" target="_blank" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+            <a href="https://www.tiktok.com/@desa_banyukuning" target="_blank" aria-label="TikTok"><i class="ri-tiktok-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">&copy; 2026 UNNES GIAT 15. Seluruh hak cipta dilindungi.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

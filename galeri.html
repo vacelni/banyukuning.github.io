@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri - Desa Banyukuning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar scrolled">
+    <div class="navbar-inner">
+      <a href="beranda.html" class="navbar-brand"><div class="brand-icon">BK</div><span>Desa Banyukuning</span></a>
+      <div class="navbar-menu">
+        <a href="beranda.html">Beranda</a><a href="profil-desa.html">Profil Desa</a><a href="data-desa.html">Data Desa</a><a href="berita.html">Berita</a><a href="anggaran.html">Anggaran</a><a href="umkm.html">UMKM</a><a href="galeri.html" class="active">Galeri</a><a href="peta.html">Peta</a><a href="pengaduan.html">Pengaduan</a>
+      </div>
+      <button class="navbar-toggle" aria-label="Menu"><i class="ri-menu-3-line"></i></button>
+    </div>
+  </nav>
+  <div class="navbar-mobile">
+    <button class="mobile-close" aria-label="Tutup"><i class="ri-close-line"></i></button>
+    <a href="beranda.html">Beranda</a><a href="profil-desa.html">Profil Desa</a><a href="data-desa.html">Data Desa</a><a href="berita.html">Berita</a><a href="anggaran.html">Anggaran</a><a href="umkm.html">UMKM</a><a href="galeri.html" class="active">Galeri</a><a href="peta.html">Peta</a><a href="pengaduan.html">Pengaduan</a>
+  </div>
+
+  <div class="page-header">
+    <h1>Galeri Desa</h1>
+    <div class="breadcrumb"><a href="beranda.html">Beranda</a><span>/</span><span>Galeri</span></div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <!-- Pemandangan -->
+      <h2 class="section-title fade-up">Pemandangan Desa</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle fade-up">Keindahan alam Desa Banyukuning di lereng Gunung Ungaran</p>
+
+      <div class="galeri-grid fade-up">
+        <div class="galeri-item" onclick="openLightbox('images/galeri1.jpeg', 'Panorama Desa Banyukuning')">
+          <img src="images/galeri1.jpeg" alt="Panorama Desa Banyukuning">
+          <div class="galeri-overlay"><i class="ri-zoom-in-line"></i></div>
+        </div>
+        <div class="galeri-item" onclick="openLightbox('images/galeri2.jpeg', 'Pemandangan Perbukitan Bandungan')">
+          <img src="images/galeri2.jpeg" alt="Perbukitan Bandungan">
+          <div class="galeri-overlay"><i class="ri-zoom-in-line"></i></div>
+        </div>
+        <div class="galeri-item" onclick="openLightbox('images/galeri3.jpeg', 'Suasana Pedesaan yang Asri')">
+          <img src="images/galeri3.jpeg" alt="Suasana Pedesaan">
+          <div class="galeri-overlay"><i class="ri-zoom-in-line"></i></div>
+        </div>
+        <div class="galeri-item" onclick="openLightbox('images/galeri4.jpeg', 'Suasana Jalan Arah Dusun Berokan')">
+          <img src="images/galeri4.jpeg" alt="Kabut Pagi">
+          <div class="galeri-overlay"><i class="ri-zoom-in-line"></i></div>
+        </div>
+        <div class="galeri-item" onclick="openLightbox('images/galeri5.jpeg', 'Hamparan Pertanian dan Perkebunan')">
+          <img src="images/galeri5.jpeg" alt="Pertanian Desa">
+          <div class="galeri-overlay"><i class="ri-zoom-in-line"></i></div>
+        </div>
+        <div class="galeri-item" onclick="openLightbox('images/galeri6.jpeg', 'Keindahan Flora Desa Banyukuning')">
+          <img src="images/galeri6.jpeg" alt="Flora Desa">
+          <div class="galeri-overlay"><i class="ri-zoom-in-line"></i></div>
+        </div>
+      </div>
+
+      <!-- Dokumentasi -->
+      <h2 class="section-title fade-up" style="margin-top: 60px;">Dokumentasi Kegiatan</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle fade-up">Dokumentasi kegiatan perangkat desa dan masyarakat</p>
+
+      <div class="galeri-grid fade-up">
+        <div class="galeri-item" onclick="openLightbox('images/galeri7.jpeg', 'Foto bersama KKN UNNES dengan perangkat desa')">
+          <img src="images/galeri7.jpeg" alt="Musyawarah Desa">
+          <div class="galeri-overlay"><i class="ri-zoom-in-line"></i></div>
+        </div>
+        <div class="galeri-item" onclick="openLightbox('images/galeri8.jpeg', 'Foto bersama setelah pelatihan pembuatan lilin aromaterapi KKN UNNES dan KKN UNS dengan Ibu-ibu PKK Desa Banyukuning')">
+          <img src="images/galeri8.jpeg" alt="Pembangunan Desa">
+          <div class="galeri-overlay"><i class="ri-zoom-in-line"></i></div>
+        </div>
+        <div class="galeri-item" onclick="openLightbox('images/galeri9.jpeg', 'Edukasi Lansiaa dan Balita di Posyandu Desa Banyukuning')">
+          <img src="images/galeri9.jpeg" alt="Kegiatan Budaya">
+          <div class="galeri-overlay"><i class="ri-zoom-in-line"></i></div>
+        </div>
+        <div class="galeri-item" onclick="openLightbox('images/galeri10.jpeg', 'Foto bersama setelah senam jumat sehat warga Desa Banyukuning')">
+          <img src="images/galeri10.jpeg" alt="Rapat Desa">
+          <div class="galeri-overlay"><i class="ri-zoom-in-line"></i></div>
+        </div>
+        <div class="galeri-item" onclick="openLightbox('images/galeri11.jpeg', 'Foto bersama pembuatan pot dan penanaman tanaman TOGA')">
+          <img src="images/galeri11.jpeg" alt="Kegiatan Masyarakat">
+          <div class="galeri-overlay"><i class="ri-zoom-in-line"></i></div>
+        </div>
+        <div class="galeri-item" onclick="openLightbox('images/galeri12.jpeg', 'Foto bersama pelajar MTs di Banyukuning')">
+          <img src="images/galeri12.jpeg" alt="Hasil Pertanian">
+          <div class="galeri-overlay"><i class="ri-zoom-in-line"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Tutup"><i class="ri-close-line"></i></button>
+    <img id="lightboxImg" src="" alt="Galeri">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+   <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <h4>Desa Banyukuning</h4>
+          <p>Website resmi Pemerintah Desa Banyukuning, Kecamatan Bandungan, Kabupaten Semarang, Provinsi Jawa Tengah.</p>
+          <div style="margin-top: 12px;">
+            <div class="contact-item"><i class="ri-map-pin-2-fill"></i><span>Jl. Raya Banyukuning, Bandungan, Semarang</span></div>
+            <div class="contact-item"><i class="ri-phone-fill"></i><span>(0298) 711-234</span></div>
+            <div class="contact-item"><i class="ri-mail-fill"></i><span>desa.banyukuning@gmail.com</span></div>
+          </div>
+        </div>
+        <div class="footer-hours">
+          <h4>Jam Pelayanan</h4>
+          <ul>
+            <li><span>Senin - Kamis</span><span>08:00 - 15:00</span></li>
+            <li><span>Jumat</span><span>08:00 - 11:00</span></li>
+            <li><span>Sabtu</span><span>08:00 - 12:00</span></li>
+            <li><span>Minggu</span><span>Libur</span></li>
+          </ul>
+        </div>
+        <div class="footer-surat">
+          <h4>Layanan Surat</h4>
+          <ul>
+            <li><a href="surat/surat-keterangan-domisili.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Keterangan Domisili <i class="ri-external-link-line"></i></a></li>
+            <li><a href="surat/surat-pengantar-ktp.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Pengantar KTP <i class="ri-external-link-line"></i></a></li>
+            <li><a href="surat/surat-keterangan-usaha.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Keterangan Usaha <i class="ri-external-link-line"></i></a></li>
+            <li><a href="surat/surat-keterangan-tidak-mampu.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Keterangan Tidak Mampu <i class="ri-external-link-line"></i></a></li>
+            <li><a href="surat/surat-pengantar-skck.pdf" target="_blank"><i class="ri-file-text-line"></i> Surat Pengantar SKCK <i class="ri-external-link-line"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Media Sosial</h4>
+          <p class="social-text">Ikuti media sosial kami untuk informasi terbaru.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="https://www.instagram.com/desa_banyukuning/" target="_blank" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+            <a href="https://www.tiktok.com/@desa_banyukuning" target="_blank" aria-label="TikTok"><i class="ri-tiktok-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">&copy; 2026 UNNES GIAT 15. Seluruh hak cipta dilindungi.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
